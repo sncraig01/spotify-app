@@ -1,4 +1,4 @@
-import '../styles.css'
+import '../styles/global.scss'
 import { Provider } from 'next-auth/client'
 
 // This default export is required in a new `pages/_app.js` file.
