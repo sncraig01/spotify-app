@@ -1,0 +1,41 @@
+@import "~antd/dist/antd.css";
+
+$color-primary: rgb(0,255,0);
+$color-secondary: rgb(0,255,0);
+$color-background: rgb(27,27,27);
+$color-text: white;
+
+
+body {
+  background-color: $color-background;
+  color: $color-text;
+}
+
+h1 {
+  color: $color-primary;
+}
+
+.a {
+  color: black;
+}
+
+.top-tracks-selector {
+  max-width: 50%;
+
+  .ant-tabs-tab {
+    color: $color-text;
+  }
+  .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+    color: $color-secondary;
+  }
+  .ant-tabs-ink-bar{
+    background-color: $color-secondary;
+  }
+  .ant-tabs-tabpane ul{
+    color: $color-text;
+  }
+  .ant-tabs-tabpane ul li div a{ 
+    color: $color-text;
+  }
+}
+

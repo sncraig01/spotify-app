@@ -6,7 +6,7 @@ import { getTopTracks } from '../lib/spotify';
 
 
 const { TabPane } = Tabs;
-
+//style={{ "color": "blueviolet" }}
 export default function Home({trackShort, trackMed, trackLong}) {
   const [ session, loading ] = useSession()
 
