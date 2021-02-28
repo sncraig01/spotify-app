@@ -1,28 +1,49 @@
 @import "~antd/dist/antd.css";
 
-$color-primary: rgb(0,255,0);
-$color-secondary: rgb(0,255,0);
-$color-background: rgb(27,27,27);
+$color-primary: rgb(101,211,110);
+$color-secondary: rgb(101,211,110);
+$color-background: rgb(47,47,47);
 $color-text: white;
 
 
 body {
   background-color: $color-background;
   color: $color-text;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 h1 {
   color: $color-primary;
+  font-size: 52px;
+
 }
 
 .a {
   color: black;
 }
 
+.login-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  padding-bottom: 200px;
+  .ant-btn {
+    font-size: 16px;
+  }
+  .ant-btn-primary{
+    background-color: $color-secondary;
+    border-color: white;
+    color: $color-background;
+  }
+}
+
 .top-tracks-selector {
   max-width: 50%;
-
   .ant-tabs-tab {
+    font-size: 22px;
     color: $color-text;
   }
   .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
@@ -32,9 +53,11 @@ h1 {
     background-color: $color-secondary;
   }
   .ant-tabs-tabpane ul{
+    font-size: 16px;
     color: $color-text;
   }
   .ant-tabs-tabpane ul li div a{ 
+    font-size: 16px;
     color: $color-text;
   }
 }

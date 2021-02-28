@@ -13,7 +13,7 @@ export default function Home({trackShort, trackMed, trackLong}) {
   if (session) {
     return (
       <Layout>
-        <div class="top-tracks-selector" >
+        <div className="top-tracks-selector" >
           <h1> Your top songs!</h1>
           <div> Top 10 songs: </div>
           <Link href="/otherPage">
