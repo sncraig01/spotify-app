@@ -85,6 +85,8 @@ export async function getServerSideProps(context) {
     return {
       props: { trackShort, trackMed, trackLong } 
     } 
+  } else {
+    Router.push('/TopTracks')
   }
   
   return {}
