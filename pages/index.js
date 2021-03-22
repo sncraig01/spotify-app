@@ -11,21 +11,20 @@ export default function Home({validToken}) {
 
   return (
     <Layout>
-      <h1> Welcome to Sarah's Spotify App </h1>
-      
-      {/* NOT LOGGED IN */}
-      {(!session || !validToken ) && <>
-        Not signed in <br/>
-        <Button onClick={() => signIn()}>Sign in</Button>
-      </>}
+      <div className="login-page">
+        {/* NOT LOGGED IN */}
+        {(!session || !validToken ) && <>
+          <h1> Welcome to Sarah's Spotify App </h1>
+          <Button onClick={() => signIn()}>Sign in</Button>
+        </>}
 
-      {/* LOGGED IN */}
-      {(session && validToken)  && <>
-        Signed in as {session.user.email} <br/>
-
-        <Button onClick={() => signOut()}>Sign out</Button>
-        <Button onClick={() => Router.push('/TopTracks')} type="primary"> Get Started! </Button>
-      </>}
+        {/* LOGGED IN */}
+        {(session && validToken)  && <>
+          <Button onClick={() => signOut()}>Sign out</Button>
+          <h1> Welcome, {session.user.name}! </h1>
+          <Button onClick={() => Router.push('/TopTracks')} type="primary"> Get Started! </Button>
+        </>}
+      </div>
     </Layout>
     
   )
